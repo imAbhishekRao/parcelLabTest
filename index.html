@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParcelLab Returns</title>
+  <style>
+    .page-content--medium {
+      max-width: 1200px !important;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- ✅ ParcelLab Returns Plugin -->
+  <div id="pl-returns-plugin" 
+       data-user="1623141" 
+       data-lang-code="de" 
+       data-country-code="de" 
+       data-scroll="off">
+  </div>
+
+  <script src="//returns.parcellab.com/dist/returns-plugin.js" async="true"></script>
+
+  <script>
+    (function () {
+      /* Load default styles ... */
+      if (!document.getElementById("pl-returns-portal-styles")) {
+        var styles = document.createElement("link");
+        styles.id = "pl-returns-portal-styles";
+        styles.rel = "stylesheet";
+        styles.href = "//staging-returns.parcellab.com/dist/returns-plugin.css";
+        document.getElementsByTagName("head")[0].appendChild(styles);
+      }
+    })();
+  </script>
+
+</body>
+</html>
